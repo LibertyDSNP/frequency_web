@@ -1,0 +1,31 @@
+/* raleway-200 */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/raleway/raleway-200.woff2') format('woff2');
+  }
+
+/* raleway-300 */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/raleway/raleway-300.woff2') format('woff2');
+  }
+
+/* raleway-400 */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway/raleway-400.woff2') format('woff2');
+  }
+
+  /* raleway-500 */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/raleway/raleway-700.woff2') format('woff2');
+  }
