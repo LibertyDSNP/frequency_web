@@ -1,31 +1,23 @@
-/* raleway-200 */
+/* favorit-regular */
 @font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 200;
-    src: url('../fonts/raleway/raleway-200.woff2') format('woff2');
-  }
-
-/* raleway-300 */
-@font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/raleway/raleway-300.woff2') format('woff2');
-  }
-
-/* raleway-400 */
-@font-face {
-    font-family: 'Raleway';
+    font-family: 'favorit';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/raleway/raleway-400.woff2') format('woff2');
+    src: url('../fonts/favorit/favorit_regular-webfont.woff2') format('woff2');
   }
 
-  /* raleway-500 */
+/* favorit-bold */
 @font-face {
-    font-family: 'Raleway';
+  font-family: 'favorit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/favorit/favorit_bold-webfont.woff2') format('woff2');
+}
+
+/* favorit mono beta */
+@font-face {
+    font-family: 'favoritmono_beta';
     font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/raleway/raleway-700.woff2') format('woff2');
+    font-weight: 300;
+    src: url('../fonts/favorit/favorit_regular_mono-webfont.woff2') format('woff2');
   }
