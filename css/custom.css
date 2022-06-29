@@ -12,6 +12,9 @@ section .container {padding:0 2rem;}
 @media (max-width: 767px) {
     .container, section .container {padding:0 3rem;}
 }
+@media (max-width: 500px) {
+    .container, section .container {padding:0 2rem;}
+}
 
 /* header */
 .logo {margin:3rem auto; border:none;}
@@ -54,6 +57,9 @@ section .container {padding:0 2rem;}
     .main .eight, .main .four {width:100%;}
     .main .social li {margin-left:4rem;}
     .main .social li img{height:6.5vw;}
+}
+@media (max-width: 500px) {
+    .main .four p {padding:.5rem;}
 }
 @media (max-width: 450px) {
     .main .social li img{height:8.5vw;}
