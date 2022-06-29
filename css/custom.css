@@ -34,7 +34,7 @@ section .container {padding:0 2rem;}
 .main .module h2 {font-family: favoritmono_beta;}
 .main .module p {color:#000; font-size:2.4rem;}
 .main .social {list-style:none; padding:5rem 0 0; float:right; color:#fff; margin:0 0 -6rem;}
-.main .social li {display:inline-block; margin-left:5rem;}
+.main .social li {display:inline-block; margin-left:5rem; margin-bottom:2.4rem;} 
 .main .social li:first-child {margin-left:0;}
 .main .social li h4 {font-size:2.4rem; text-align:right; line-height:2.8rem;}
 .main .social li img {height:5rem;}
@@ -42,6 +42,7 @@ section .container {padding:0 2rem;}
 @media (max-width: 900px) {
     .main .module {margin-top:-10rem; padding:3rem;}
     .main .module p {font-size:2.0rem;}
+    .main .social li {margin-bottom:1rem;}
     .main .social {margin:0 0 -4rem; padding-top:4rem;}
     .main .social li h4 {font-size:2rem;line-height:2.4rem;}
     .main .social li img{height:4rem;}
@@ -75,6 +76,7 @@ section .container {padding:0 2rem;}
 /* legal */
 .legalHeader {background:#4B64FF; color:#fff;}
 .legalHeader .container {justify-content:left;}
+.legalHeader .legalTOC {margin-bottom:0;}
 .legalList p {margin-bottom:1.5rem;}
 .legalTOC li, .legalOL li {margin-bottom:.2rem;}
 .legalOL {list-style:none;}
@@ -83,18 +85,19 @@ section .container {padding:0 2rem;}
 .legalOL > li:first-child {border-top:none;}
 
 .legalOL ul li {padding-right:1.5rem;}
-.legalTOC.listColumns li:nth-child(3n+1) {width:36%;}
-.legalTOC.listColumns li {width:32%; display:inline; float:left;}
-
+.legalTOC.listColumns {column-count:3; column-gap: 5rem; margin-bottom:0;}
+.legalTOC.listColumns li {list-style-position:outside; margin-left:2rem;}
 .legalList.legalTOC a {color:#00FF47; border:none;}
 .legalList.legalTOC a:hover {color:#fff; border:none;}
 .legalTOC a {color:#000; border:none;}
 .legalTOC a:hover {color:#00FF47; border:none;}
 @media (max-width:900px) {
-    .legalTOC.listColumns li:nth-child(3n+1), .legalTOC.listColumns li  {width:50%;}
+    .legalTOC.listColumns {column-count:2;}
+    /*.legalTOC.listColumns li:nth-child(3n+1), .legalTOC.listColumns li  {width:50%;}*/
 }
-@media (max-width:700px) {
-    .legalTOC.listColumns li:nth-child(3n+1), .legalTOC.listColumns li {width:100%;}
+@media (max-width:650px) {
+    .legalTOC.listColumns {column-count:unset;}
+    .legalTOC.listColumns li {width:100%;}
 }
 /* footer */
 
