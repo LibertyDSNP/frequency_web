@@ -10,7 +10,7 @@ section .container {padding:0 2rem;}
     section {padding:4rem 0rem;}
 }
 @media (max-width: 767px) {
-    .container {padding:0 3rem;}
+    .container, section .container {padding:0 3rem;}
 }
 
 /* header */
@@ -18,7 +18,7 @@ section .container {padding:0 2rem;}
 
 
 /* banner */
-.banner123 {background-color:#f0f0f0; padding-bottom:14rem; line-height:0;}
+.banner123 { background-color: #f0f0f0; padding-bottom:14rem; line-height:0;}
 @media (max-width: 900px) {
     .banner123 {padding:4rem 0 10rem 0;}
 }
@@ -35,6 +35,7 @@ section .container {padding:0 2rem;}
 .main .module p {color:#000; font-size:2.4rem;}
 .main .social {list-style:none; padding:5rem 0 0; float:right; color:#fff; margin:0 0 -6rem;}
 .main .social li {display:inline-block; margin-left:5rem;}
+.main .social li:first-child {margin-left:0;}
 .main .social li h4 {font-size:2.4rem; text-align:right; line-height:2.8rem;}
 .main .social li img {height:5rem;}
 .main .social a {border:none;}
@@ -48,12 +49,19 @@ section .container {padding:0 2rem;}
 @media (max-width: 767px) {
     .main .four p {padding:0 3rem;}
     .main .module {margin-top:0rem;}
+    .main .module p {font-size:1.8rem;}
     .main .eight, .main .four {width:100%;}
     .main .social li {margin-left:4rem;}
     .main .social li img{height:6.5vw;}
 }
 @media (max-width: 450px) {
     .main .social li img{height:8.5vw;}
+    .main .social li {margin-left:2.5rem;}
+    .main .social li h4 {font-size:2.0rem;}
+}
+@media (max-width: 300px) {
+    .main .social li h4 {font-size:1.8rem;}
+    .main .social li {margin-left:2rem;}
 }
 
 /* partner section */
@@ -82,38 +90,53 @@ section .container {padding:0 2rem;}
 .legalList.legalTOC a:hover {color:#fff; border:none;}
 .legalTOC a {color:#000; border:none;}
 .legalTOC a:hover {color:#00FF47; border:none;}
-
-
-
+@media (max-width:900px) {
+    .legalTOC.listColumns li:nth-child(3n+1), .legalTOC.listColumns li  {width:50%;}
+}
+@media (max-width:700px) {
+    .legalTOC.listColumns li:nth-child(3n+1), .legalTOC.listColumns li {width:100%;}
+}
 /* footer */
-footer {background: #f0f0f0; padding:3rem 0;}
-footer .row {width:100%;}
+
+footer {background:#f0f0f0; padding:3rem 0; font-size:smaller; border-top:1px solid #eee;}
+.copyright {align-self:start; text-align:right; color:#666;}
+.footerNav {list-style:none; margin-bottom:0;}
+.footerNav li {text-align:right; margin-right:5%; display:inline;}
+.footerNav li:last-child {margin-right:0;}
 footer a {color:#000; border:none;}
 footer a:hover {color:#00FF47;}
-footer ul {list-style:none; margin-bottom:0;}
-footer li {margin-bottom:0; line-height:2.6rem;}
-footer .offset-by-three {float:right;}
-footer .icon-frequency {
-    background:url('../images/icon-f.png') no-repeat; background-size:5rem; background-position:top right;
-    text-align:right; padding-right:7rem; float:right;
+
+@media (max-width: 750px) {
+    footer .three.columns, .nine.columns {width: 100%; float:none; margin-left:0;}
+    footer .three.columns {margin-left:0;}
+    .footerNav {display:flex; justify-content:space-between; font-size:1.5rem;}
+    .footerNav li {white-space: nowrap;}
+    .copyright {border:none; border-top:1px solid #e5e5e5; padding-top:2.5rem; padding-left:0; margin-top:2rem; margin-left:0; float:none; text-align:right; font-size:1.3rem; }
+    footer .container {flex-direction:column;}
+
 }
-@media (max-width: 900px) {
-    footer {font-size:1.4rem;}
+
+@media (max-width: 500px) {
+    .footerNav { margin-top:1.4rem;}
+    .footerNav {flex-direction:column;}
+    .footerNav li {display:block; text-align:left; flex-direction:column; font-size:1.4rem;}
+    .copyright {text-align:left;}
+
 }
-@media (max-width: 767px) {
-    footer .footerLinks .three {width:25%;}
-    footer .offset-by-three.columns {margin-left:0;}
+
+/* show / hide */ 
+@media (max-width:600px) {
+    .desktopView {display:none;}
+    .mobileView {display:block;}
 }
-@media (max-width: 590px) {
-    footer {display:flex; justify-content:space-between;}
-    footer .footerLinks .three, footer .offset-by-three.columns {width:31%; margin-left:0;}
+@media (min-width:601px) {
+    .desktopView {display:block;}
+    .mobileView {display:none;}
 }
-@media (max-width: 540px) {
-    footer .footerLinks {display:inline-block; width:65%;}
-    footer .footerLinks .three {width:65%; margin-left:0;}
-    footer .offset-by-three.columns {width:35%; margin-left:0;}
-    footer .icon-frequency {padding:5.4rem 0 0 0;}
-}
+
+
+
+
 
 /* klaro */
 .klaro .cookie-modal .cm-modal, .klaro .cookie-notice  { background-color:#fff !important; border:1px solid #00FF47 !important; border-radius:10px !important;}   
