@@ -75,10 +75,13 @@ section .container {padding:0 2rem;}
 .legalOL > li:first-child {border-top:none;}
 
 .legalOL ul li {padding-right:1.5rem;}
-.legalTOC li:nth-child(3n+1) {width:36%;}
-.legalTOC li {width:32%; display:inline; float:left;}
+.legalTOC.listColumns li:nth-child(3n+1) {width:36%;}
+.legalTOC.listColumns li {width:32%; display:inline; float:left;}
+
 .legalList.legalTOC a {color:#00FF47; border:none;}
 .legalList.legalTOC a:hover {color:#fff; border:none;}
+.legalTOC a {color:#000; border:none;}
+.legalTOC a:hover {color:#00FF47; border:none;}
 
 
 
@@ -112,3 +115,29 @@ footer .icon-frequency {
     footer .icon-frequency {padding:5.4rem 0 0 0;}
 }
 
+/* klaro */
+.klaro .cookie-modal .cm-modal, .klaro .cookie-notice  { background-color:#fff !important; border:1px solid #00FF47 !important; border-radius:10px !important;}   
+.klaro .cookie-modal .cm-modal {color:#000 !important;}
+.klaro .cookie-notice { bottom:0 !important; right:0 !important; max-width:350px !important;}
+.klaro .cookie-notice p {color:#000 !important;}
+.klaro .cn-ok {display:flex !important; justify-content:space-around !important;}
+.klaro .cookie-notice a, .klaro .cookie-modal a {color:#000 !important; vertical-align:top !important;}
+.klaro .cookie-modal .cm-btn.cm-btn-success, .klaro .cookie-notice .cm-btn.cm-btn-success {background: #00AA3E;}
+.klaro .cookie-modal .cm-btn, .klaro .cookie-notice .cm-btn { text-transform:none !important; width:15rem !important; line-height:initial; margin-right:0 !important; }
+.klaro .cookie-notice .cm-btn.cm-btn-success, 
+.klaro .cookie-modal .cm-btn.cm-btn-success {background:#4B64FF !important; color:#00FF47 !important;}
+.klaro .cookie-notice .cm-btn.cm-btn-success:hover, 
+.klaro .cookie-modal .cm-btn.cm-btn-success:hover,
+.klaro .cookie-modal .cm-btn.cm-btn-success.cm-btn-info.cm-btn-accept:hover {background:#00FF47 !important; color:#4B64FF !important; border:none !important;}
+.klaro .cookie-modal .cm-btn.cm-btn-success.cm-btn-info.cm-btn-accept {background:#fff !important; border:1px solid #4B64FF; color:#4B64FF !important; margin-left:1rem;}
+.klaro .cm-btn.cn-decline {background:#fff !important; border:1px solid #999 !important; color:#666 !important;}
+.klaro .cm-btn.cn-decline:hover {background:#999 !important; color:#fff !important;}
+.klaro .cookie-modal p, .klaro .cookie-modal h1, .klaro .cookie-modal h2, .klaro .cookie-modal ul, 
+.klaro .cookie-modal li, .klaro .cookie-notice p, .klaro .cookie-notice h1, .klaro .cookie-notice h2, 
+.klaro .cookie-notice ul, .klaro .cookie-notice li {color:#000 !important;}
+.klaro .cookie-modal .cm-app-input:checked+.cm-app-label .slider {background:#4B64FF !important;}
+.klaro .cookie-modal .cm-modal .cm-header, .klaro .cookie-modal .cm-modal .cm-footer {border-color:#eee !important;}
+
+@media (max-width:340px) {
+    .klaro .cookie-modal .cm-btn, .klaro .cookie-notice .cm-btn { width: 48% !important; }
+}
