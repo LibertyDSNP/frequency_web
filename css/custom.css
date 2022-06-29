@@ -1,6 +1,9 @@
 body { display: flex; min-height: 100vh; flex-direction: column; -webkit-font-feature-settings: "lnum"; -moz-font-feature-settings: "lnum";font-feature-settings: "lnum";}
 .container { display:flex; flex: 1; align-items: center; padding:2rem; max-width:1100px; justify-content:center;}
-.module {border-radius:50px; border:2px solid #51FF5A;}
+.module {border-radius:50px; border:2px solid #00FF47;}
+.pageTop { margin-top:5%;}
+.heading {margin-bottom:30px;}
+.subheading {font-size:initial; margin-top:-20px;}
 section {padding:6rem 0;}
 section .container {padding:0 2rem;}
 @media (max-width: 900px) {
@@ -11,7 +14,8 @@ section .container {padding:0 2rem;}
 }
 
 /* header */
-.logo {margin:3rem auto;}
+.logo {margin:3rem auto; border:none;}
+
 
 /* banner */
 .banner123 {background-color:#f0f0f0; padding-bottom:14rem; line-height:0;}
@@ -33,6 +37,7 @@ section .container {padding:0 2rem;}
 .main .social li {display:inline-block; margin-left:5rem;}
 .main .social li h4 {font-size:2.4rem; text-align:right; line-height:2.8rem;}
 .main .social li img {height:5rem;}
+.main .social a {border:none;}
 @media (max-width: 900px) {
     .main .module {margin-top:-10rem; padding:3rem;}
     .main .module p {font-size:2.0rem;}
@@ -54,14 +59,34 @@ section .container {padding:0 2rem;}
 /* partner section */
 .partners {list-style:none; padding:5rem 0 3rem; margin:0px auto; display:flex; width:100%; justify-content:space-between;}
 .partners li img {height:10rem;}
+.partners a {border:none;}
 @media (max-width: 900px) {
     .partners li img {height:10vw;}
 }
 
+/* legal */
+.legalHeader {background:#4B64FF; color:#fff;}
+.legalHeader .container {justify-content:left;}
+.legalList p {margin-bottom:1.5rem;}
+.legalTOC li, .legalOL li {margin-bottom:.2rem;}
+.legalOL {list-style:none;}
+.legalOL ul {list-style-position:outside; margin-right:3rem;}
+.legalOL > li {border-top:1px solid #00FF47; padding-top:1.7em; padding-bottom:1rem;}
+.legalOL > li:first-child {border-top:none;}
+
+.legalOL ul li {padding-right:1.5rem;}
+.legalTOC li:nth-child(3n+1) {width:36%;}
+.legalTOC li {width:32%; display:inline; float:left;}
+.legalList.legalTOC a {color:#00FF47; border:none;}
+.legalList.legalTOC a:hover {color:#fff; border:none;}
+
+
+
 /* footer */
 footer {background: #f0f0f0; padding:3rem 0;}
 footer .row {width:100%;}
-footer a {color:#000}
+footer a {color:#000; border:none;}
+footer a:hover {color:#00FF47;}
 footer ul {list-style:none; margin-bottom:0;}
 footer li {margin-bottom:0; line-height:2.6rem;}
 footer .offset-by-three {float:right;}
@@ -77,7 +102,13 @@ footer .icon-frequency {
     footer .offset-by-three.columns {margin-left:0;}
 }
 @media (max-width: 590px) {
-    footer .footerLinks .three {width:51%; margin-left:0;}
-    footer .offset-by-three.columns {width:49%; margin-left:0;}
+    footer {display:flex; justify-content:space-between;}
+    footer .footerLinks .three, footer .offset-by-three.columns {width:31%; margin-left:0;}
+}
+@media (max-width: 540px) {
+    footer .footerLinks {display:inline-block; width:65%;}
+    footer .footerLinks .three {width:65%; margin-left:0;}
+    footer .offset-by-three.columns {width:35%; margin-left:0;}
+    footer .icon-frequency {padding:5.4rem 0 0 0;}
 }
 
